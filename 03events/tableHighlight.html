@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Highlighted Tables</title>
+    <script type="text/javascript" src="tableHighlight.js"></script>
+    <style type="text/css">
+      tr.hi td, td.hi {
+        background-color: #ccc;
+      }
+      table.extra tr.hi td, table.extra td.hi {
+        color: red; 
+        text-decoration: underline overline;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Highlighted Tables</h1>
+
+    <h2>A table with highlighting</h2>
+    <table>
+      <tr>
+        <td></td>
+        <td>Column 1</td>
+        <td>Column 2</td> 
+        <td>Column 3</td>
+        <td>Column 4</td>
+      </tr>
+      <tr>
+        <td>Row 1</td>
+        <td>1,1</td><td>1,2</td><td>1,3</td><td>1,4</td>
+      </tr>
+      <tr>
+        <td>Row 2</td>
+        <td>2,1</td><td>2,2</td><td>2,3</td><td>2,4</td>
+      </tr>
+      <tr>
+        <td>Row 3</td>
+        <td>3,1</td><td>3,2</td><td>3,3</td><td>3,4</td>
+      </tr>
+      <tr>
+        <td>Row 4</td>
+        <td>4,1</td><td>4,2</td><td>4,3</td><td>4,4</td>
+      </tr>
+    </table>
+
+    <h2>A table with different highlighting</h2>
+    <table class="extra">
+      <tr>
+        <td></td>
+        <td>Column 1</td>
+        <td>Column 2</td>
+        <td>Column 3</td>
+        <td>Column 4</td>
+      </tr>
+      <tr>
+        <td>Row 1</td>
+        <td>1,1</td><td>1,2</td><td>1,3</td><td>1,4</td>
+      </tr>
+      <tr>
+        <td>Row 2</td>
+        <td>2,1</td><td>2,2</td><td>2,3</td><td>2,4</td>
+      </tr>
+      <tr>
+        <td>Row 3</td>
+        <td>3,1</td><td>3,2</td><td>3,3</td><td>3,4</td>
+      </tr>
+      <tr>
+        <td>Row 4</td>
+        <td>4,1</td><td>4,2</td><td>4,3</td><td>4,4</td>
+      </tr>
+    </table>
+  </body>
+</html>

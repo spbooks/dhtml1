@@ -1,0 +1,11 @@
+input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc #666 #666 #ccc;
+  padding: 3px;
+  color: #666;
+}
+
+span.errormessage {
+  color: red;
+}

@@ -1,0 +1,22 @@
+label { 
+  width: 100px; 
+  display: block;
+  float: left;
+}
+input {
+  display: block;
+  float: left;
+  width: 300px;
+}
+p {
+  clear: both;
+}
+textarea {
+  width: 400px;
+  height: 300px;
+}
+span.error {
+  color: red;
+  font-size: 80%;
+  padding-left: 1em;
+}

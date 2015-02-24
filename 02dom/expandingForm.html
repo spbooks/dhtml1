@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Free beer signup form</title>
+
+    <script type="text/javascript">
+      var fieldCount = 1;
+      function addFriend() {
+        fieldCount++;
+        var newFriend = document.createElement('input');
+        newFriend.type = 'text';
+        newFriend.name = 'friend' + fieldCount;
+        newFriend.id = 'friend' + fieldCount;
+        document.getElementById('fs').appendChild(newFriend);
+      }
+    </script>
+
+    <style type="text/css">
+      input {
+        display: block;
+        margin-bottom: 2px;
+      }
+      button {
+        float: right;
+      }
+      fieldset {
+        border: 1px solid black;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Free beer signup form</h1>
+    <form>
+      <label for="you">Your name</label>
+      <input type="text" name="you" id="you">
+      <fieldset id="fs">
+        <legend>Friends you wish to invite</legend>
+        <button onclick="addFriend(); return false;">
+          Add another friend
+        </button>
+        <input type="text" name="friend1" id="friend1">
+      </fieldset>
+      <input type="submit" value="Save details">
+    </form>
+  </body>
+</html>
+

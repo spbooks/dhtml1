@@ -1,0 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <body>
+    <p>This iframe document contains the response from the server.</p>
+    <script type="text/javascript">
+      if (window.parent.receiveData) {
+        window.parent.receiveData(
+            'some data sent from the iframe content page!');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+/* Turn off list bullets */
+ul.aqtree3clickable li { list-style: none; }
+
+ul.aqtreeclickable, ul.aqtreeclickable ul, ul.aqtreeclickable li { margin: 0; padding: 0; }
+
+/* Provide space for our own "bullet" inside the link */
+ul.aqtree3clickable li a { padding-left: 20px; }
+
+/* Show "bullets" in the links, depending on the class of the
+   LI that the link's in */
+ul.aqtree3clickable li.aq3open a {
+    background: url(gnome-fs-directory-visiting.png) center left no-repeat;
+}
+ul.aqtree3clickable li.aq3closed a {
+    background: url(gnome-fs-directory.png) center left no-repeat;
+}
+ul.aqtree3clickable li.aq3bullet a {
+    background: url(gnome-fs-directory-accept.png) center left no-repeat;
+}
+
+/* Actually show and hide sublists */
+ul.aqtree3clickable li.aq3open ul { display: block; }
+ul.aqtree3clickable li.aq3closed ul { display: none; }

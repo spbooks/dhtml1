@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Detect keystrokes</title>
+    <script type="text/javascript">
+      function aKeyWasPressed(e) {
+        var key = e.keyCode;
+        alert('You pressed the key: ' + String.fromCharCode(key));
+      }
+
+      function addListeners(e) {
+        var textarea = document.getElementById('myta');
+        textarea.addEventListener('keyup', aKeyWasPressed, false);
+      }
+
+      window.addEventListener('load', addListeners, false);
+    </script>
+  </head>
+  <body>
+    <form>
+      <textarea id="myta"></textarea>
+    </form>
+  </body>
+</html>

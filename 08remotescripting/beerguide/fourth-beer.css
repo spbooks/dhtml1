@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 5px 0;
+  padding: 0;
+}
+
+#characters {
+  width: 25%;
+  float: left;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+#beers {
+  width: 40%;
+  float: left;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+#beerdata {
+  width: 25%;
+  float: left;
+  margin-right: 5px;
+  overflow: hidden;
+  border-left: solid 5px #f0f;
+}
+
+#beerdef {
+  background-color: #d0d;
+  text-decoration: none;
+  color: white;
+  padding: 0 0 0 1em;
+  margin: 0;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+a { 
+  width: 100%;      /* IE hack */
+  display: block;
+  background-color: #d0d;
+  border-left: 5px solid #f0f;
+  text-decoration: none;
+  color: white;
+  font-weight: bold; 
+  padding-left: 1em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h2 {
+  width: 100%;     /* IE hack */
+  padding: 0 0 0 20px;
+  margin: 0;
+  background-color: #f0f;
+  font-size: 1em;
+}
+
+a:hover { 
+  background-color: #0d0; 
+  border-left: 5px solid #0f0;
+}
+
+a.highlight { 
+  background-color: #0dd;
+  border-left: 5px solid #0ff;
+}
+

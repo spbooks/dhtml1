@@ -1,0 +1,63 @@
+<script src="sliding-menu.js"></script>
+
+<style type="text/css">
+
+ul.slidingmenu, ul.slidingmenu ul, ul.slidingmenu li, ul.slidingmenu a { 
+  padding: 0; margin: 0; width: 10em; 
+}
+ul.slidingmenu li { 
+  list-style-type: none; 
+  position: relative;
+  display: block;
+}
+
+ul.slidingmenu a { display: block; }
+
+ul.slidingmenu li ul { 
+  position: absolute;  
+  top: -4px; /* the height of the top border */
+  left: 100%; 
+  display: none;
+}
+
+/* Appearance */ 
+body { font-family: sans-serif; }
+
+ul.slidingmenu, ul.slidingmenu ul {
+  border: 1px solid #666;
+  border-width: 4px 1px 1px 1px;
+}
+
+ul.slidingmenu li { background: #efe; text-align: center; border-bottom: 1px dotted #999; }
+ul.slidingmenu a { color: #666; text-decoration: none; }
+ul.slidingmenu li > a:hover { background: #cdc; color: #333; }
+ul.slidingmenu li.subheader { background: #ded; }
+</style>
+
+<ul class="slidingmenu">
+  <li><a href="http://www.sitepoint.com">SitePoint articles</a>
+  <ul>
+    <li><a href="http://www.sitepoint.com/article/search-engine-spam-techniques">Latest Search Engine Spam Techniques</a></li>
+    <li><a href="http://www.sitepoint.com/article/free-web-design-apps">5 Free Windows Web Design Apps You Can't Live Without!</a></li>
+    <li><a href="http://www.sitepoint.com/article/securing-apache-2-server-ssl">Securing Your Apache 2 Server with SSL</a></li>
+  </ul>
+  </li>
+  
+  <li><a href="http://www.sitepoint.com/subcat/javascript">DHTML Tutorials</a>
+  <ul>
+    <li><a href="http://www.sitepoint.com/articlelist/345">By Simon Willison</a>
+    <ul>
+      <li><a href="http://www.sitepoint.com/article/rounded-corners-css-javascript">Rounded Corners with CSS and JavaScript</a></li>
+      <li><a href="http://www.sitepoint.com/article/bookmarklets">Better Living Through Bookmarklets</a></li>
+      <li><a href="http://www.sitepoint.com/article/simple-tricks-usable-forms">Simple Tricks for More Usable Forms</a></li>
+    </ul>
+    </li>
+    <li><a href="http://www.sitepoint.com/article/smooth-scrolling-javascript">My tutorial</a></li>
+    <li><a href="http://www.sitepoint.com/article/behaved-dhtml-case-study">By Aaron Boodman</a>
+    <ul>
+      <li><a href="http://www.sitepoint.com/article/behaved-dhtml-case-study">Well-Behaved DHTML: A Case Study</a></li>
+    </ul>
+    </li>
+  </ul>
+  </li>
+</ul>

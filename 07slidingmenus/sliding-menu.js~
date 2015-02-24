@@ -1,0 +1,127 @@
+sM = {
+  init: function () {
+    var uls = document.getElementsByTagName('UL');
+    for (var u=0; u<uls.length; u++) {
+      if (uls[u].className.search(/\bslidingmenu\b/) == -1) continue;
+      var lis = uls[u].getElementsByTagName('LI');
+      for (i=0; i<lis.length; i++) {
+        var node = lis[i];
+        if (node.nodeName=="LI" && node.getElementsByTagName('UL').length > 0) {
+          sM.addEvent(node,"mouseover",sM.mover, false);
+          sM.addEvent(node,"mouseout",sM.mout, false);
+          node.isIn = false;
+          node.className += ' subheader';
+        }
+      }
+    }
+  },
+
+  mover: function () {
+    var el = this;    
+    clearTimeout(el.outTimeout);    
+    if (!el.isIn) {
+      for (var i=0; i<el.childNodes.length; i++) {
+        var node = el.childNodes[i];
+        if (node.nodeName.toLowerCase() == 'ul') {
+          // stop any current activity
+          clearInterval(node.intervalID);
+          
+          node.clippingRectangle = [ 0, 0, 4, 0 ];
+          
+          // save width and height
+          node.style.display = 'block';
+          node.savedOW = node.offsetWidth;
+          node.savedOH = node.offsetHeight;
+          node.style.display = 'none';
+          
+          node.intervalID = setInterval(function() { sM.showMenu(node) }, 10);
+        
+          break; // exit for loop
+        }
+      }
+    }
+    el.isIn = true;
+  },
+
+				
+
+  mout: function () {
+    var el = this;
+    /* delay, first to avoid extra mouseouts
+       and second to help with accidental mouseouts */
+    el.outTimeout = setTimeout(function () { sM.mout2(el) }, 300);
+  },
+
+	
+  mout2: function (m) {
+    for (var i=0; i<m.childNodes.length; i++) {
+      var node = m.childNodes[i];
+      if (node.nodeName.toLowerCase() == 'ul') {
+        // stop any current activity
+        clearInterval(node.intervalID);
+
+        node.intervalID = setInterval(function() { sM.hideMenu(node) }, 10);
+        
+        break; // exit for loop
+      }
+    }
+    m.isIn = false;
+  },
+  
+  showMenu: function(el) {
+    el.clippingRectangle[1] += 20;
+    if (el.clippingRectangle[1] >= el.savedOW) {
+      el.clippingRectangle[1] = el.savedOW;
+      el.clippingRectangle[2] += 20;
+      if (el.clippingRectangle[2] >= el.savedOH) {
+        el.clippingRectangle[2] = el.savedOH;
+        clearInterval(el.intervalID);
+        // reset the clip: browser-specific
+        if (document.all && !window.opera) {
+          el.style.clip = 'rect(auto)';
+        } else {
+          el.style.clip = '';
+        }
+        return;
+      }
+    }
+    el.style.clip = 'rect(' + el.clippingRectangle.join('px ') + 'px)';
+    el.style.display = 'block';
+  },
+
+  hideMenu: function(el) {
+    el.clippingRectangle[2] -= 20;
+    if (el.clippingRectangle[2] <= 4) {
+      el.clippingRectangle[2] = 4;
+      el.clippingRectangle[1] -= 20;
+      if (el.clippingRectangle[1] <= 0) {
+        clearInterval(el.intervalID);
+        // reset the clip: browser-specific
+        if (document.all && !window.opera) {
+          el.style.clip = 'rect(auto)';
+        } else {
+          el.style.clip = '';
+        }
+        el.style.display = 'none';
+        return;
+      }
+    }
+    el.style.clip = 'rect(' + el.clippingRectangle.join('px ') + 'px)';
+  },
+
+  addEvent: function (elm, evType, fn, useCapture) {
+    // cross-browser event handling for IE5+, NS6 and Mozilla
+    // By Scott Andrew
+    if (elm.addEventListener){
+      elm.addEventListener(evType, fn, useCapture);
+      return true;
+    } else if (elm.attachEvent){
+      var r = elm.attachEvent("on"+evType, fn);
+      return r;
+    } else {
+      elm['on'+evType] = fn;
+    }
+  }
+}
+
+sM.addEvent(window,"load",sM.init);

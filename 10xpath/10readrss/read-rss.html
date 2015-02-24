@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Blogroll</title>
+<script type="text/javascript" src="sarissa.js"></script>
+<script type="text/javascript" src="sarissa_ieemu_xpath.js"></script>
+<script type="text/javascript" src="read-rss.js"></script>
+<style type="text/css">
+#blogs {
+  width: 25em;
+  background-color: #660;
+  padding: 0;
+  margin: 0;
+}
+#blogs li {
+  border: 1px solid #330;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#blogs a {
+  color: #ffc;
+  font-size: small;
+  text-decoration: none;
+}
+
+#blogs ul { 
+  margin: 0; 
+  padding: 0 0 0 1em; 
+  background-color: #990;
+}
+#blogs ul li { 
+  margin: 0; padding: 0; 
+  list-style: none;
+  border-width: 0;
+}
+#blogs ul li a:hover {
+  text-decoration: underline;
+}
+#blogs ul li p {
+  font-size: x-small;
+  font-style: italic;
+  padding: 0 0 0.2em 0;
+  margin: 0;
+}
+
+#blogs li ul {
+  display: none;
+}
+#blogs li.show ul {
+  display: block;
+}
+</style>
+</head>
+<body>
+<h1>Weblogs</h1>
+<ul id="blogs">
+  <li>
+    <a href="http://www.sitepoint.com/blog-view.php?blogid=5" 
+        rss="sitepoint-dhtmlcss.rdf"
+        >SitePoint: DHTML &amp; CSS Blog: Stylish Scripting</a>
+  </li>
+  <li>
+    <a href="http://www.sitepoint.com/blog-view.php?blogid=6" 
+        rss="sitepoint-opensource.rdf"
+        >SitePoint: Open Source Blog: Open Sourcery</a>
+  </li>
+</ul>
+</body>
+</html>

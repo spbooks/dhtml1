@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Client-side form validation</title>
+    <script type="text/javascript" src="exampleValidation.js"></script>
+    <script type="text/javascript" src="genericValidation.js"></script>
+    <link type="text/css" rel="stylesheet" href="exampleValidation.css">
+  </head>
+  <body>
+    <h1>Client-side form validation</h1>
+    <form action="">
+      <p><label for="email">Email address</label>
+        <input type="text" name="email" id="email">
+        <span id="error_email" class="errormessage"></span></p>
+  
+      <p><label for="phone">Phone number</label>
+        <input type="text" name="phone" id="phone"></p>
+  
+      <p><label for="country">Country code</label>
+        <input type="text" name="country" id="country" size="2" maxlength="2"></p>
+  
+      <p><input type="submit" value="submit"></p>
+    </form>
+  </body>
+</html>

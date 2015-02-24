@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Animated links</title>
+<style type="text/css">
+a.external {
+  padding-left: 13px;
+  background: url(remote.gif) center left no-repeat;
+}
+a.external:hover {
+  background-image: url(remote_a.gif);
+}
+a { color: blue; }
+</style>
+
+</head>
+<body>
+<h1>Animated links</h1>
+
+<p>This paragraph contains some links: some are <a href="somewhere">local</a>,
+others are <a class="external" href="http://www.google.com/">external</a>. External 
+links, such as one to <a class="external" href="http://www.sitepoint.com">SitePoint</a>,
+have a class in the CSS that applies a GIF image to them and an animated image when
+moused over.</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>A simple iframe example</title>
+    <link type="text/css" rel="stylesheet" href="simple-iframe-2.css">
+    <script type="text/javascript">
+      function receiveData(data) {
+        document.getElementById('response').firstChild.nodeValue = data;
+      }
+    </script>
+  </head>
+  <body>
+    <p>An iframe to which we send requests</p>
+    <iframe id="scriptframe" name="scriptframe" src=""></iframe>
+    <p><a href="simple-iframe-content-2.html"
+        target="scriptframe">Send a request</a></p>
+    <div>
+      <h2>Response data received</h2>
+      <p id="response">No data yet.</p>
+    </div>
+  </body>
+</html>

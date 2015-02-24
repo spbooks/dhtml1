@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://purl.org/rss/1.0/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <channel rdf:about="http://www.sitepoint.com/blog-view.php?blogid=5">
+    <title>SitePoint's DHTML &amp; CSS Blog: Stylish Scripting</title>
+    <link>http://www.sitepoint.com/blog-view.php?blogid=5</link>
+    <description>The latest posts in SitePoint's DHTML &amp; CSS blog, 'Stylish Scripting'.</description>
+    <image rdf:resource="http://www.sitepoint.com/images/sitepoint-logo.gif"/>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=197199" />
+        <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=196678" />
+      </rdf:Seq>
+    </items>
+  </channel>
+
+  <image rdf:about="http://www.sitepoint.com/images/sitepoint-logo.gif">
+    <title>SitePoint's DHTML &amp; CSS Blog: Stylish Scripting</title>
+    <link>http://www.sitepoint.com/blog-view.php?blogid=5</link>
+    <url>http://www.sitepoint.com/images/sitepoint-logo.gif</url>
+  </image>
+
+  <item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=197199">
+    <title>CSS tricks in both dimensions</title>
+    <link>http://www.sitepoint.com/blog-post-view.php?id=197199</link>
+    <description>Cameron Adams and Dave Shea both came through recently with some smart new CSS techniques.  Cameron's trick, entitled Resolution dependent layout, provides a welcome new angle to the long running debate over liquid vs. fixed width designs. The standard dilemma is that fixed wi...</description>
+    <dc:date>2004-09-22T06:10:41Z</dc:date>
+  </item>
+
+  <item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=196678">
+    <title>A9 and Google Local</title>
+    <link>http://www.sitepoint.com/blog-post-view.php?id=196678</link>
+    <description>If you want proof that remote scripting has hit the mainstream, look no further than the recent launches of both Amazon's A9.com search engine and Google's new Google Local service. Both make extensive use of remote scripting, a technique whereby JavaScript is used to refresh ...</description>
+    <dc:date>2004-09-20T05:41:45Z</dc:date>
+  </item>
+
+</rdf:RDF>

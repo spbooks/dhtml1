@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 10em;
+}
+
+div#folders {
+  float: left;
+  width: 35%;
+  border-right: 2px solid black;
+  padding-left: 1em;
+}
+
+div#folders ul {
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+div#folders li {
+  padding: 0;
+  margin: 0;
+}
+
+div#files {
+  float: left;
+  width: 60%;
+  padding-left: 5px;
+}
+
+div#files ul {
+  padding: 0;
+  margin: 0;
+}
+
+div#files li {
+  float: left;
+  width: 7em;
+  list-style: none;
+  font-size: small;
+  padding: 3px;
+  margin: 0;
+}
+
+.proxyTarget {
+  cursor: crosshair;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.target.hover { 
+  background-color: #999;
+  color: red;
+}
+
+body.dragging {
+  cursor: move;
+}
+
+.draggable {
+  position: relative;
+}

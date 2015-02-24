@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>ScrollImage demonstration</title>
+    <script src="scrollImage.js" type="text/javascript"></script>
+    <style type="text/css">
+      .scrollimage {
+        display: block;
+        float: left;
+        border: 1px solid black;
+        margin: 1em;
+        padding: 0;
+      }
+      
+      .scrollimage:hover {
+        position: relative;
+      }
+      
+      .scrollimage img {
+        border: none;
+      }
+      
+      .scrollimage:hover img {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <h1>Scanned documents</h1>
+    
+    <p>
+      <a href="1.jpg" class="scrollimage"
+        mainx="563" mainy="823" thumbx="82" thumby="120"
+        style="background: url(1.jpg); width: 82px; height: 120px"
+      ><img src="1-thumb.jpg"></a>
+
+      <a href="2.jpg" class="scrollimage"
+        mainx="563" mainy="777" thumbx="87" thumby="120"
+        style="background: url(2.jpg); width: 87px; height: 120px"
+      ><img src="2-thumb.jpg"></a>
+
+      <a href="3.jpg" class="scrollimage"
+        mainx="567" mainy="823" thumbx="83" thumby="120"
+	style="background: url(3.jpg); width: 83px; height: 120px"
+      ><img src="3-thumb.jpg"></a>
+
+      <a href="4.jpg" class="scrollimage"
+        mainx="558" mainy="806" thumbx="83" thumby="120"
+        style="background: url(4.jpg); width: 83px; height: 120px"
+      ><img src="4-thumb.jpg"></a>
+
+      <a href="5.jpg" class="scrollimage"
+        mainx="434" mainy="467" thumbx="112" thumby="120"
+        style="background: url(5.jpg); width: 112px; height: 120px"
+      ><img src="5-thumb.jpg"></a>
+    </p>
+    
+  </body>
+</html>

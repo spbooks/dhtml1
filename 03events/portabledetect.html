@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Detect keystrokes</title>
+    <script type="text/javascript">
+
+      function aKeyWasPressed(e) {
+        if (window.event) {
+          var key = window.event.keyCode;
+        } else {
+          var key = e.keyCode;
+        }
+        alert('You pressed the key: ' + String.fromCharCode(key));
+      }
+
+      function addListeners(e) {
+        var textarea = document.getElementById('myta');
+        addEvent(textarea, 'keyup', aKeyWasPressed, false);
+      }
+
+      addEvent(window, 'load', addListeners, false);
+
+      function addEvent(elm, evType, fn, useCapture)
+      // cross-browser event handling for IE5+, NS6+ and Mozilla/Gecko
+      // By Scott Andrew
+      {
+        if (elm.addEventListener) {
+          elm.addEventListener(evType, fn, useCapture); 
+          return true; 
+        } else if (elm.attachEvent) {
+          var r = elm.attachEvent('on' + evType, fn); 
+          return r; 
+        } else {
+          elm['on' + evType] = fn;
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <form>
+      <textarea id="myta"></textarea>
+    </form>
+  </body>
+</html>

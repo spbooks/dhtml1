@@ -1,0 +1,67 @@
+
+ul.slidingmenu li ul { 
+  position: absolute;  
+  top: -4px; /* the height of the top border */
+  left: 100%; 
+  display: none;
+}
+
+/* Appearance */ 
+body { font-family: sans-serif; }
+
+ul.slidingmenu, ul.slidingmenu ul {
+  border: 1px solid #666;
+  border-width: 4px 1px 1px 1px;
+}
+
+ul.slidingmenu li {
+  background: #efe;
+  text-align: center;
+  border-bottom: 1px dotted #999;
+}
+
+ul.slidingmenu a {
+  color: #666;
+  text-decoration: none;
+}
+
+ul.slidingmenu li > a:hover { background: #cdc; color: #333; }
+ul.slidingmenu li.subheader { background: #ded; }
+
+
+/* layout styles */
+
+/*
+ul { border: solid thin black; }
+li { border: solid thin red; }
+a { border: solid thin green; }
+*/
+
+/* remove standard HTML list indenting, and wrap */
+ul.slidingmenu,
+ul.slidingmenu ul,
+ul.slidingmenu li,
+ul.slidingmenu a { 
+  padding: 0; margin: 0; width: 10em; 
+}
+
+/* make li's into clean, moveable blocks */
+ul.slidingmenu li { 
+  list-style-type: none; 
+  position: relative;
+/*  display: block;*/
+}
+
+/* make sure links fill their containers */
+ul.slidingmenu a {
+  display: block;
+}
+
+/* make sure any ul inside an li (a submenu) takes up zero normal flow */
+ul.slidingmenu li ul { 
+  position: absolute;  
+  left: 100%; 
+  top: -4px;
+  display: none;
+}
+

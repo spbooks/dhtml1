@@ -1,0 +1,41 @@
+form {
+  margin-left: 200px;
+}
+
+form div {
+  margin: 0 0 0.25em 0;
+}
+
+label {
+  float: left;
+  margin-left: -200px;
+}
+
+label.para {
+  float: none;
+  display: block;
+}
+
+label.radio {
+  float: none;
+  margin-left: 0;
+}
+
+ul.radio {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input.text {
+  width: 15em;
+}
+
+textarea {
+  width: 20em;
+  height: 10em;
+}
+
+input.submit {
+  margin-left: -200px;
+}

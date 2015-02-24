@@ -1,0 +1,55 @@
+function addEvent(elm, evType, fn, useCapture) {
+  // cross-browser event handling for IE5+, NS6 and Mozilla
+  // By Scott Andrew
+  if (elm.addEventListener) {
+    elm.addEventListener(evType, fn, useCapture);
+    return true;
+  } else if (elm.attachEvent) {
+    var r = elm.attachEvent('on' + evType, fn);
+    return r;
+  } else {
+    elm['on' + evType] = fn;
+  }
+}
+
+
+function init() {
+  var uls = document.getElementsByTagName('ul');
+  for (var u = 0; u < uls.length; u++) {
+    if (uls[u].className.search(/\bslidingmenu\b/) == -1) continue;
+    var lis = uls[u].getElementsByTagName('li');
+    for (var i = 0; i < lis.length; i++) {
+      var node = lis[i];
+      if (node.nodeName.toLowerCase() == 'li' &&
+          node.getElementsByTagName('ul').length > 0) {
+        addEvent(node, 'mouseover', mover, false);
+        addEvent(node, 'mouseout', mout, false);
+        node.getElementsByTagName('a')[0].className += ' subheader';
+      }
+    }
+  }
+}
+
+addEvent(window, 'load', init, false);
+
+function mover(e) {
+  var el = window.event ? window.event.srcElement : e ? e.target : null;
+  if (!el) return;
+  for (var i = 0; i < el.childNodes.length; i++) {
+    var node = el.childNodes[i];
+    if (node.nodeName.toLowerCase() == 'ul') {
+      node.style.display = 'block';
+    }
+  }
+}
+
+function mout(e) {
+  var el = window.event ? window.event.srcElement : e ? e.target : null;
+  if (!el) return;
+  for (var i = 0; i < el.childNodes.length; i++) {
+    var node = el.childNodes[i];
+    if (node.nodeName.toLowerCase() == 'ul') {
+      node.style.display = 'none';
+    }
+  }
+}

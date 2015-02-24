@@ -1,0 +1,66 @@
+/* Appearance */ 
+body {
+  font-family: sans-serif;
+}
+
+ul.slidingmenu, ul.slidingmenu ul {
+  border: 1px solid #666;
+  border-width: 4px 1px 1px 1px;
+}
+
+ul.slidingmenu li {
+  background: #efe;
+  text-align: center;
+  border-bottom: 1px dotted #999;
+}
+
+ul.slidingmenu li.subheader {
+  background: #ded;
+}
+
+ul.slidingmenu a {
+  color: #666;
+  text-decoration: none;
+}
+
+ul.slidingmenu a:hover {
+  background: #cdc;
+  color: #333;
+}
+
+/* layout styles */
+
+/* remove standard HTML list indenting, and display as normal blocks */
+ul.slidingmenu,
+ul.slidingmenu ul,
+ul.slidingmenu li,
+ul.slidingmenu a { 
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+/* use a fixed width for menu and submenus */
+ul.slidingmenu,
+ul.slidingmenu ul {
+  width: 10em;
+}
+
+/* make li's into clean, moveable blocks */
+ul.slidingmenu li {
+  list-style-type: none; 
+  position: relative;
+}
+
+/* Make list items do what they're supposed to in IE */
+ul.slidingmenu a {
+  width: 100%;
+}
+
+/* make sure any ul inside an li (a submenu) takes up zero normal flow */
+ul.slidingmenu ul { 
+  position: absolute;  
+  top: -4px; /* the height of the top border */
+  left: 100%; 
+  display: none;
+}

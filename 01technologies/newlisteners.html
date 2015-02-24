@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>JavaScript event listeners done the modern way</title>
+    <script type="text/javascript">
+
+      function uppercaseListener() {
+        this.value = this.value.toUpperCase();
+      }
+
+      function installListeners() {
+        var element = document.getElementById('street');
+	element.addEventListener('change', uppercaseListener, false); 
+      }
+
+      window.addEventListener('load', installListeners, false);
+
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <input id="street" type="text">
+      <input type="submit">
+    </form>
+  </body>
+</html>

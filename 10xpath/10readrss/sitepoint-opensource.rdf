@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel rdf:about="http://www.sitepoint.com/blog-view.php?blogid=6"><title>SitePoint's Open Source Blog: Open Sourcery</title><link>http://www.sitepoint.com/blog-view.php?blogid=6</link><description>The latest posts in SitePoint's Open Source blog, 'Open Sourcery'.</description><image rdf:resource="http://www.sitepoint.com/images/sitepoint-logo.gif"/><items><rdf:Seq>
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=206126" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=205819" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=205054" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=204602" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=204088" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=203490" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=202999" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=202602" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=202379" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=201239" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=201036" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=200601" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=200286" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=199940" />
+  <rdf:li rdf:resource="http://www.sitepoint.com/blog-post-view.php?id=199257" />
+</rdf:Seq></items></channel>
+<image rdf:about="http://www.sitepoint.com/images/sitepoint-logo.gif"><title>SitePoint's Open Source Blog: Open Sourcery</title><link>http://www.sitepoint.com/blog-view.php?blogid=6</link><url>http://www.sitepoint.com/images/sitepoint-logo.gif</url></image>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=206126"><title>Men in Black Security Guides</title><link>http://www.sitepoint.com/blog-post-view.php?id=206126</link><description>Where might one go for advanced security techniques? Regardless of where on the planet you may be - if you think about it for a while the United States Government's National Security Agency will pop up on that list somewhere.  
+
+These are the folks who brought us the excellent ...</description><dc:date>2004-10-30T03:18:22Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=205819"><title>Scalable Vector Graphics</title><link>http://www.sitepoint.com/blog-post-view.php?id=205819</link><description>The W3C is issuing a final call for comments on its draft of Scalable Vector Graphics 1.2.  After a review of public input the SVG Working Group will be submitting for candidacy.
+
+If you have not explored SVG yet - put it on your radar. It is an XML-based language for web grap...</description><dc:date>2004-10-28T20:16:28Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=205054"><title>Open Source Licensing Breakdown</title><link>http://www.sitepoint.com/blog-post-view.php?id=205054</link><description>Since open source has emerged and shifted the way we think about technology solutions, the discussion of open source is now settling around business and legal issues rather than technical ones.
+
+Recent major stories speak to intellectual property, patents, copyright and source c...</description><dc:date>2004-10-26T10:44:18Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=204602"><title>Portable Linux Virtual Machine's</title><link>http://www.sitepoint.com/blog-post-view.php?id=204602</link><description>Quite the buzz is building over the technology preview released by MetroPipe. This package runs on Damnsmall Linux and uses QEMU (a CPU emulator).
+
+Essentially an Internet communication system, it can run entirely on a USB mini-drive key (128 MB) and other flash-media devi...</description><dc:date>2004-10-24T13:26:28Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=204088"><title>High Performance MySQL</title><link>http://www.sitepoint.com/blog-post-view.php?id=204088</link><description>Many may have seen it on Slashdot yesterday - but Jeremy Zawodny has recently authored a new tome for the legions of MySQL fans. Zawodny, being employed by the fine folks at Yahoo, certainly has the real world practice and credentials for writing High Performance MySQL.
+
+You c...</description><dc:date>2004-10-21T20:22:38Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=203490"><title>SSH In-Depth</title><link>http://www.sitepoint.com/blog-post-view.php?id=203490</link><description>No matter how long I am immersed in a particular technology, I find I can learn something new everyday. That is perhaps one of the joys of being a citizen of geekdom.
+
+I came across Brian Hatch's piece at SecurityFocus.com that is the beginning of an in-depth series on SSH. Mr...</description><dc:date>2004-10-19T13:03:45Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=202999"><title>Wikis Galore</title><link>http://www.sitepoint.com/blog-post-view.php?id=202999</link><description>The focus has been on wikis of late - both here at SitePoint and through the general growth in exposure and popularity as developers and savvy users find ways to integrate these amazing flexible tools into their environments.
+
+I have spent time recently trying to decide just how...</description><dc:date>2004-10-17T11:54:59Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=202602"><title>Hodge Podge of Links</title><link>http://www.sitepoint.com/blog-post-view.php?id=202602</link><description>Some interesting articles I came across today taking a break from a mind-numbing documentation project...
+
+Two useful articles on Linux.com covering firewalls and Mono (the latter of particular interest to me as I am just building it for the first time on one of my development s...</description><dc:date>2004-10-15T02:56:20Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=202379"><title>Test for Web Server Vulnerability</title><link>http://www.sitepoint.com/blog-post-view.php?id=202379</link><description>Nikto is a handy tool created by the folks at Cirt.Net for comprehensive scanning of your web servers' security.
+
+As described on the Cirt site:
+
+[indent]Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, in...</description><dc:date>2004-10-14T11:23:57Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=201239"><title>Using Sudo to Manage Administrators</title><link>http://www.sitepoint.com/blog-post-view.php?id=201239</link><description>The sudo command and capability (superuser do) can be a valuable tool when multiple users are responsible for managing parts of a server or servers. In particular, sudo is important when you need to restrain the use of 'root' and/or need to log all administrative actions and chang...</description><dc:date>2004-10-09T13:12:38Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=201036"><title>Blog Software Breakdown</title><link>http://www.sitepoint.com/blog-post-view.php?id=201036</link><description>Owen Winkler has a nice matrix of weblog platforms with requirements, capabilities, cost and more at his own WordPress-driven blog -- asymptomatic.
+
+This can be a tricky area to track as there are many views on &amp;quot;blogging&amp;quot; and what other apps can be included in this s...</description><dc:date>2004-10-08T13:17:31Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=200601"><title>Taming MySQL Administration</title><link>http://www.sitepoint.com/blog-post-view.php?id=200601</link><description>Taming the management of your MySQL Server may have just become a little easier with the most recent release of Navicat.
+
+This GUI administration tool for MySQL servers has some advantages for the developer -- for starters it runs on Linux, Macintosh and Windows with fair consis...</description><dc:date>2004-10-06T19:29:04Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=200286"><title>GUI for Man pages on Mac OS X</title><link>http://www.sitepoint.com/blog-post-view.php?id=200286</link><description>For those in the SitePoint community on the Mac (as I am in most cases) -- a nice tool written by Carl Lindberg called ManOpen simplifies accessing and searching Man files on your system.
+
+It captures a list of all Man pages on the system, allows for searches by keyword and al...</description><dc:date>2004-10-05T15:30:08Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=199940"><title>VMWare Workstation 4.5.2</title><link>http://www.sitepoint.com/blog-post-view.php?id=199940</link><description>Nice review on VMWare version 4.5.2 which introduced 64-bit support on AMD and Intel 64-bit processors. This covers Windows 2003 Server, Red Hat Enterprise and SUSE Linux Enterprise 64-bit releases.
+
+Read it at the Jem Report. 
+
+I have tooled with VMWare for several years no...</description><dc:date>2004-10-04T00:12:20Z</dc:date></item>
+<item rdf:about="http://www.sitepoint.com/blog-post-view.php?id=199257"><title>September Wrapup</title><link>http://www.sitepoint.com/blog-post-view.php?id=199257</link><description>Some interesting things I have found this month on Fedora, SELinux, Google competition perhaps and more...
+
+1) A way to get an insider look at Fedora aside from the RedHat sponsored site is through the Fedora People blog.
+
+2) SELinux is now in the 2.6 kernel and has some i...</description><dc:date>2004-09-30T15:37:08Z</dc:date></item>
+</rdf:RDF>

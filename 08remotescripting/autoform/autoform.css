@@ -1,0 +1,17 @@
+input {
+  padding-right: 20px;
+  display: block;
+}
+
+.autoform_pending { 
+  background: url(autoform_save.png) center right no-repeat;
+}
+.autoform_saved { 
+  background: url(autoform_saved.png) center right no-repeat;
+}
+
+#autoform_ifr {
+  border: none;
+  width: 0;
+  height: 0;
+}

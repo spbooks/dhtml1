@@ -1,0 +1,22 @@
+div {
+  border: 1px solid black;
+  padding: 0 0 1em 0;
+  width: 20em;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+div p {
+  padding: 0 1em;
+}
+
+#scriptframe {
+  width: 300px;
+  height: 100px;
+  border: 2px solid red;
+}

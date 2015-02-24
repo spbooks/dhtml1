@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>File Manager</title>
+    <script type="text/javascript" src="aqtree3clickable.js"></script>
+    <script type="text/javascript" src="dom-drag.js"></script>
+    <script type="text/javascript" src="sarissa.js"></script>
+    <script type="text/javascript" src="fileman.js"></script>
+    <link rel="stylesheet" href="aqtree3clickable.css">
+    <link rel="stylesheet" href="fileman.css">
+  </head>
+  <body>
+
+    <h1>Drag a file to a folder</h1>
+
+    <div id="folders">
+      <ul class="aqtree3clickable">
+        <li>
+          <a href="/" path="/" class="target">/</a>
+          <ul>
+            <li>
+              <a href="spike" path="/spike" class="target">spike</a>
+            </li>
+            <li>
+              <a href="sync" path="/sync" class="target">sync</a>
+            </li>
+            <li>
+              <a href="zfs" path="/zfs" class="target">zfs</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div id="files">
+    </div>
+
+  </body>
+</html>
